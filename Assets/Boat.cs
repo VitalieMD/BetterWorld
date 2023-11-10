@@ -6,12 +6,14 @@ using UnityEngine;
 public class Boat : MonoBehaviour
 {
     public static bool isCollected = false;
+    public GameObject load;
     public GameObject fishNetPrefab;
     public Transform fishNetpos;
     public float fishNetSpeed = 15f;
 
     private void Awake()
     {
+        load.SetActive(false);
         GlobalEventManager.OnCollected.AddListener(Collect);
         GlobalEventManager.OnDiscard.AddListener(Discard);
     }
@@ -19,11 +21,13 @@ public class Boat : MonoBehaviour
     void Collect()
     {
         isCollected = true;
+        load.SetActive(true);
     }
 
     void Discard()
     {
         isCollected = false;
+        load.SetActive(false);
     }
 
     private void Update()
