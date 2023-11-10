@@ -1,1 +1,5 @@
+<<<<<<< Updated upstream
 /Users/plamendochev/Documents/GitHub/BetterWorld
+=======
+C:\Users\danie\Documents\GitHub\BetterWorld
+>>>>>>> Stashed changes

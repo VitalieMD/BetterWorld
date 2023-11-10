@@ -1,4 +1,4 @@
-using System;
+    using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,7 +12,7 @@ public class CanvasManager : MonoBehaviour
     {
         if (Boat.isCollected)
         {
-            delivered.text = "Rubish onboard";
+            delivered.text = "Collected";
         }
         else
         {
